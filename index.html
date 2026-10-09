@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Tools Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">🛡 Cyber Tools Hub</div>
+    <p>Cybersecurity Tools Library for Fahad</p>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>Explore Cybersecurity Tools</h1>
+        <p>Find, organize and save your favorite security tools.</p>
+
+        <input
+            type="search"
+            id="search"
+            placeholder="Search tools, categories, or descriptions..."
+        >
+    </section>
+
+    <section class="featured">
+        <h2>Featured Resource</h2>
+        <div class="featured-card">
+            <h3>🌐 OSINT Framework</h3>
+            <p>
+                Explore open-source intelligence resources
+                organized by investigation category.
+            </p>
+            <a href="https://osintframework.com/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Open OSINT Framework ↗
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <h2>Categories</h2>
+        <div id="categories"></div>
+    </section>
+
+    <section class="toolbar">
+        <h2>Tools Library <span id="tool-count"></span></h2>
+
+        <div class="actions">
+            <button id="favorites-btn">☆ Favorites</button>
+            <button id="add-tool-btn">+ Add Tool</button>
+        </div>
+    </section>
+
+    <form id="tool-form" hidden>
+        <h2>Add New Tool</h2>
+
+        <input id="tool-name" placeholder="Tool Name" required>
+
+        <select id="tool-category" required></select>
+
+        <textarea id="tool-description"
+                  placeholder="Tool Description"
+                  required></textarea>
+
+        <input id="tool-url"
+               type="url"
+               placeholder="https://example.com"
+               required>
+
+        <button type="submit">Save Tool</button>
+        <button type="button" id="cancel-btn">Cancel</button>
+    </form>
+
+    <div id="tools-container"></div>
+</main>
+
+<footer>
+    <p>Cyber Tools Hub | Learn • Explore • Secure</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
